@@ -1,0 +1,14 @@
+#LOOPS: APPLIED PROBLEMS
+#FIND THE SMALLEST AND LARGEST DIGIT IN A NUMBER
+num = int(input("ENTER A NUMBER:"))
+smallest = 9
+largest = 0
+while num > 0:
+    digit = num % 10
+    if digit < smallest:
+        smallest = digit
+    if digit > largest:
+        largest = digit
+    num //= 10
+print("SMALLEST DIGIT:", smallest)
+print("LARGEST DIGIT:", largest)
