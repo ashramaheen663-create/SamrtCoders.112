@@ -1,0 +1,13 @@
+#LOOP:DIGIT BASED PRBLMS
+#CHECK IF A NUMBER IS PALINDROME OR NOT
+n=int(input("Enter a number:"))
+original=n
+reverse=0
+while n>0:
+    digit=n%10
+    reverse=reverse*10+digit
+    n=n//10
+if original==reverse:
+    print("Palindrome number:", original)
+else:
+    print("Not a palindrome number:", original)
