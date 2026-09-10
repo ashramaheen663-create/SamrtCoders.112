@@ -1,0 +1,59 @@
+#LOOPS: STAR PATTERNS
+# RIGHT-ANGLED TRIANGLE(STARS)
+print("RIGHT ANGLED TRIANGLE USING STARS")
+n=4
+for i in range(1,n+1):
+    print("*"*i)
+#INVERTED RIGHT-ANGLE TRIANGLE
+print("INVERTED RIGHT ANGLE TRIANGLE")
+n=4
+for i in range(n,0,-1):
+    print("*"*i)
+#RIGHT-ALIGNED TRIANGLE
+print("RIGHT_ALIGNED TRIANGLE")
+n=4
+for i in range(1,n+1):
+    print(" " * (n-i) + "*" * i)
+#INVERTED RIGHT ALIGNED TRIANGLE
+print("INVERTED RIGHT_ALIGNED TRIANGLE")
+n=4
+for i in range(n,0,-1):
+    print(" "*(n-i)+"*"*i)
+#PYRAMID (CENTERED)
+print("PYRAMID CENTERED")
+n=4
+for i in range(1,n+1):
+    print(" "*(n-i)+"*"*(2*i-1))
+#INVERTED PYRAMID 
+print("INVERTED PYRAMID")
+n=4
+for i in range(n,0,-1):
+    print(" "*(n-i)+"*"*(2*i-1))
+#DIAMOND SHAPE
+print("DIAMOND SHAPE")
+n=4
+for i in range(1,n+1):
+    print(" "*(n-i)+"*"*(2*i-1))
+for i in range(n-1,0,-1):
+    print(" "*(n-i)+"*"*(2*i-1)) 
+#HOLLOW RECTANGLE
+print("HOLLOW RECTANGLE")
+rows,cols=4,5
+for i in range(rows):
+    if i == 0 or i == rows-1:
+        print("*"*cols)
+    else:
+        print("*"+" "*(2*cols-3)+"*")
+#HOLLOW RIGHT-ANGLED TRIANGLE
+print("HOLLOW RIGHT-ANGLED TRIANGLE")
+n=4
+for i in range(1,n+1):
+    if i == 1 or i == n:
+        print("*"+" "*(i-2)+"+")
+#SANDGLASS/HOURGLASS
+print("SANDGLASS")
+n=4
+for i in range(n,0,-1):
+    print(" "*(n-i)+"*"*(2*i-1))
+for i in range(2,n+1):
+    print(" "*(n-i)+"*"*(2*i-1))
